@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* bike */
+
+.bike-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* search */
+
+h3 {
+  margin-bottom: 24px;
+}
+
+.search {
+  margin-top: 120px;
+}
+
+.search p {
+  margin-bottom: 16px;
+}
+
+.search-container {
+  display: flex;
+  border: 1px solid #ccc;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  background-color: #8a4238;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #411e19;
+}
+
+/* sell */
+
+.sell {
+  margin-top: 32px;
+  color: #8a4238;
+}
+
+.sell input {
+  display: none;
+}
+
+.sell input:checked + span,
+.sell input:checked + p {
+  /* color: #FFF; */
+  border: 1px solid pink; 
+  opacity: 0.7;
+}
+
+.sell ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+}
+
+.sell li {
+  width: 45%;
+  position: relative;
+  padding-top: 22.5%;
+}
+
+.sell li:hover {
+  opacity: 0.7;
+}
+
+.maker span,
+.maker p,
+.cc p,
+.price p {
+  display: block;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.maker p,
+.cc p,
+.price p {
+  padding-top: 20%;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FFF;
+}
+
+/* maker */
+
+.yamaha span {
+  content: url(../img/yamaha.PNG);
+}
+
+.honda span {
+  content: url(../img/honda.PNG);
+}
+
+.suzuki span {
+  content: url(../img/suzuki.PNG);
+}
+
+.kawasaki span {
+  content: url(../img/kawasaki.PNG);
+}
+
+.bmw span {
+  content: url(../img/bmw.PNG);
+}
+
+.hurley span {
+  content: url(../img/hurley.PNG);
+}
+
+.searchAll a {
+  display: block;
+  margin: 64px auto;
+  width: 200px;
+}
+
+.search-p {
+  font-size: 24px;
+  line-height: 64px;
+  margin-left: 8px;
+}
+
+.material-icons,
+.search-p {
+  vertical-align: middle;
+}
+
+
+@media (min-width: 600px) {
+
+.sell ul {
+  gap: 16px;
+  /* justify-content: normal; */
+}
+
+.sell li {
+  width: 30%;
+  position: relative;
+  padding-top: 15%;
+}
+
+.maker p,
+.cc p,
+.price p {
+  padding-top: 18%;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FFF;
+}
+
+}
+
+@media (min-width: 800px) {
+
+.sell ul {
+  gap: 32px;
+}
+
+.sell li {
+  width: 25%;
+  position: relative;
+  padding-top: 12.5%;
+}
+
+.maker p,
+.cc p,
+.price p {
+  padding-top: 20%;
+  font-size: 2vw;
+}
+
+.searchAll a {
+  display: block;
+  margin: 64px auto;
+  width: 300px;
+}
+
+.search-p {
+  font-size: 32px;
+  margin-left: 16px;
+  line-height:  64px;
+}
+
+
+
+}

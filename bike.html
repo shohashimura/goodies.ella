@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe1</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bike.css">
+</head>
+<body>
+  <div class="sk-circle" id="loading">
+    <div class="sk-circle1 sk-child"></div>
+    <div class="sk-circle2 sk-child"></div>
+    <div class="sk-circle3 sk-child"></div>
+    <div class="sk-circle4 sk-child"></div>
+    <div class="sk-circle5 sk-child"></div>
+    <div class="sk-circle6 sk-child"></div>
+    <div class="sk-circle7 sk-child"></div>
+    <div class="sk-circle8 sk-child"></div>
+    <div class="sk-circle9 sk-child"></div>
+    <div class="sk-circle10 sk-child"></div>
+    <div class="sk-circle11 sk-child"></div>
+    <div class="sk-circle12 sk-child"></div>
+  </div>
+
+  <!-- <div class="main-title"></div> -->
+  <div id="fixed-footer-menu">
+    <ul>
+      <li><a href="./bike.html"><i class="fa-solid fa-house footer-icon"></i><br>
+          <p>Top</p>
+        </a></li>
+      <li><a href="./bike.html"><i class="fa-solid fa-comment-dots footer-icon"></i><br>
+          <p>Cafe</p>
+        </a></li>
+      <li><a href="./bike.html"><i class="fa-solid fa-play footer-icon"></i><br>
+          <p>Menu</p>
+        </a></li>
+      <li><a href="./bike.html"><i class="fa-solid fa-calendar-minus footer-icon"></i><br>
+          <p>Bike</p>
+        </a></li>
+      <li><a href="./bike.html"><i class="fa-solid fa-wallet footer-icon"></i><br>
+          <p>Contact</p>
+        </a></li>
+    </ul>
+  </div>
+  <header>
+    <div>
+      <a href="index.html">
+        <h1>Cafe</h1>
+      </a>
+    </div>
+
+    <div class="pc-menu">
+      <ul>
+        <li><a href="">menu</a></li>
+        <li><a href="">price</a></li>
+        <li><a href="">company</a></li>
+        <li><a href="">about</a></li>
+      </ul>
+    </div>
+
+    <div class="sp-menu">
+      <a href="#" class="openbtn">
+        <span class="material-icons" id="open">menu</span>
+      </a>  
+    </div>
+
+    <div class="overlay">
+      <span class="material-icons" id="close">close</span>
+      <ul>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="bike-container">
+    <div class="search">
+      <h3>フリーワードで探す</h3>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="sell maker">
+      <h3>メーカーから探す</h3>
+      <ul>
+        <li class="yamaha">
+          <label>
+            <input type="checkbox" value="yamaha" name="sellbike">
+            <span></span>
+          </label>
+        </li>
+        <li class="honda">
+          <label>
+            <input type="checkbox" value="honda" name="sellbike">
+            <span></span>
+          </label>
+        </li>
+        <li class="suzuki">
+          <label>
+            <input type="checkbox" value="suzuki" name="sellbike">
+            <span></span>
+          </label>
+        </li>
+        <li class="kawasaki">
+          <label>
+            <input type="checkbox" value="kawasaki" name="sellbike">
+            <span></span>
+          </label>
+        </li>
+        <li class="hurley">
+          <label>
+            <input type="checkbox" value="hurley" name="sellbike">
+            <span></span>
+          </label>
+        </li>
+        <li class="etc">
+          <label>
+            <input type="checkbox" value="etc" name="sellbike">
+            <p>その他</p>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sell cc">
+      <h3>排気量から探す</h3>
+      <ul>
+        <li class="c50">
+          <label>
+            <input type="checkbox" value="~50cc" name="sellbike">
+            <p>~50cc</p>
+          </label>
+        </li>
+        <li class="51cc~125cc">
+          <label>
+            <input type="checkbox" value="51cc~125cc" name="sellbike">
+            <p>51cc~125cc</p>
+          </label>
+        </li>
+        <li class="126cc~250cc">
+          <label>
+            <input type="checkbox" value="126cc~250cc" name="sellbike">
+            <p>126cc~250cc</p>
+          </label>
+        </li>
+        <li class="251cc~400cc">
+          <label>
+            <input type="checkbox" value="251cc~400cc" name="sellbike">
+            <p>251cc~400cc</p>
+          </label>
+        </li>
+        <li class="401cc~750cc">
+          <label>
+            <input type="checkbox" value="401cc~750cc" name="sellbike">
+            <p>401cc~750cc</p>
+          </label>
+        </li>
+        <li class="751cc~">
+          <label>
+            <input type="checkbox" value="751cc~" name="sellbike">
+            <p>751cc~</p>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sell price">
+      <h3>排気量から探す</h3>
+      <ul>
+        <li class="price20">
+          <label>
+            <input type="checkbox" value="price20" name="sellbike">
+            <p>~20万円</p>
+          </label>
+        </li>
+        <li class="price30">
+          <label>
+            <input type="checkbox" value="price30" name="sellbike">
+            <p>20~30万円</p>
+          </label>
+        </li>
+        <li class="price40">
+          <label>
+            <input type="checkbox" value="price40" name="sellbike">
+            <p>30~40万円</p>
+          </label>
+        </li>
+        <li class="price50">
+          <label>
+            <input type="checkbox" value="price50" name="sellbike">
+            <p>40~50万円</p>
+          </label>
+        </li>
+        <li class="price60">
+          <label>
+            <input type="checkbox" value="price60" name="sellbike">
+            <p>50~60万円</p>
+          </label>
+        </li>
+        <li class="price1000">
+          <label>
+            <input type="checkbox" value="price100" name="sellbike">
+            <p>60万円~</p>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="searchAll">
+      <a class="btn"><span class="material-icons">search</span><span class="search-p">検索する</span>
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <small>(c) cafe.com</small>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
